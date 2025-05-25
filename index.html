@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Free Web Tutorial">
+  <meta name="keywords" content="HTML, JavaScript, CSS">
+  <meta name="author" content="Rj Rimon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Journey of a Digital Dreamer</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <h1>Rimon's Path to Web Development and Freelancing Success</h1>
+  <p>Rimon, a young dreamer from a village, is carving his path in the digital world through web</p>
+
+  <h2>The legend element</h2>
+  <form action="action-page.php">
+    <fieldset>
+      <legend>Personalia</legend>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+
+      <label for="mail">Email:</label>
+      <input type="email" id="mail" name="mail"><br><br>
+
+      <label for="birthdays">Birthday:</label>
+      <input type="date" id="birthdays" name="birthdays"><br><br>
+
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+
+  <h2>The main element</h2>
+  <main>
+    <h3>Most popular browsers</h3>
+    <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+
+    <article>
+      <h4>Mozilla Firefox</h4>
+      <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+    </article>
+
+    <article>
+      <h4>Google Chrome</h4>
+      <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+    </article>
+
+    <article>
+      <h4>Microsoft Edge</h4>
+      <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+    </article>
+  </main>
+
+  <h2>The map and area elements</h2>
+  <p>Click on the image to go to a new page:</p>
+  <img src="example.jpg" alt="Clickable image" usemap="#workplace" width="500" height="500">
+  <map name="workplace">
+    <area shape="rect" coords="34,44,274,350" alt="Image 1" href="image.com">
+    <area shape="rect" coords="10,23,62,135" alt="Image 2" href="pic.com">
+    <area shape="circle" coords="32,95,82" alt="Image 3" href="photo.com">
+  </map>
+
+  <h2>The noscript element</h2>
+  <script>
+    document.write("Hello world!");
+  </script>
+  <noscript>Sorry, your browser does not support JavaScript</noscript>
+
+  <h2>The object element</h2>
+  <object data="movie.mp4" width="400" height="400">
+    <param name="autoplay" value="true">
+  </object>
+
+  <h2>The optgroup and option elements</h2>
+  <form action="/action_page.php">
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars">
+      <optgroup label="Swedish Cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </optgroup>
+      <optgroup label="German Cars">
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </optgroup>
+    </select><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <h2>The output element</h2>
+  <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="a" value="50">
+    +
+    <input type="number" id="b" value="50">
+    = <output name="x" for="a b"></output>
+  </form>
+
+  <h2>The picture element</h2>
+  <picture>
+    <source media="(min-width:650px)" srcset="image1.jpg">
+    <source media="(min-width:450px)" srcset="image2.jpg">
+    <img src="fallback.jpg" alt="No image found">
+  </picture>
+
+  <h2>The q element</h2>
+  <p>This is a <q>short quote</q> embedded in a sentence.</p>
+
+  <h2>The ruby and rp elements</h2>
+  <ruby>
+    漢 <rp>(</rp><rt>kan</rt><rp>)</rp>
+  </ruby>
+
+  <h2>The samp element</h2>
+  <p><samp>File not found. Press F1 to continue.</samp></p>
+
+  <h2>The select element</h2>
+  <select>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="audi">Audi</option>
+    <option value="opel">Opel</option>
+  </select>
+
+  <h2>The table element</h2>
+  <table border="1" width="600">
+    <caption><strong>Academic Grade Point Sheet</strong></caption>
+    <thead>
+      <tr>
+        <th>Subject Code</th>
+        <th>Subject Name</th>
+        <th>Grade</th>
+        <th>Point</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>101</td><td>Bangla</td><td>A+</td><td>5.00</td></tr>
+      <tr><td>103</td><td>English</td><td>A</td><td>4.00</td></tr>
+      <tr><td>109</td><td>Mathematics</td><td>A+</td><td>5.00</td></tr>
+      <!-- Add more rows if needed -->
+    </tbody>
+    <tfoot>
+      <tr><td colspan="3" style="text-align:right;"><strong>Total GPA:</strong></td><td><strong>4.41</strong></td></tr>
+    </tfoot>
+  </table>
+
+  <h2>The textarea element</h2>
+  <form action="/action_page.php">
+    <label for="w3review">Review of W3Schools:</label>
+    <textarea id="w3review" name="w3review" rows="4" cols="50">At w3schools.com you will learn how to make a website.</textarea>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <h2>The video element</h2>
+  <video width="320" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+</body>
+</html>
